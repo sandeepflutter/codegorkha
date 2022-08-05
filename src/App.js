@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Nav from "./components/Navbar/Nav";
+import Nav from "./Navbar/Nav";
 import {Link} from 'react-scroll';
 import {IoMdRocket} from 'react-icons/io';
 
@@ -32,7 +32,5 @@ function App() {
     </div>
   );
 }
-
-
 
 export default App;
