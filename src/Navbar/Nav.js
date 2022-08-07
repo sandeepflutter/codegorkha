@@ -22,7 +22,7 @@ function Nav() {
                   href="#"
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    About Me
+                    Website
                   </button>
 
                   <button to="skill"  
@@ -30,7 +30,7 @@ function Nav() {
                   href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Skills
+                    Mobile
                   </button>
 
                   <button to="project"
@@ -38,7 +38,7 @@ function Nav() {
                     href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Projects
+                    Desktop
                   </button>
 
                   <button to="service" 
@@ -46,7 +46,7 @@ function Nav() {
                   href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    My services
+                    IOT
                   </button>
 
                   <button to="contact" 
@@ -123,7 +123,7 @@ function Nav() {
                   href="#"
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  About Me
+                  Website
                 </button>
 
                 <button to="skill"  
@@ -131,7 +131,7 @@ function Nav() {
                   href="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                   Skills
+                   Mobile
                 </button>
 
                 <button to="project"  
@@ -139,7 +139,7 @@ function Nav() {
                   href="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Projects
+                  Desktop
                 </button>
 
                 <button to="service"  
@@ -147,7 +147,7 @@ function Nav() {
                   href="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  My services
+                  IOT
                 </button>
 
                 <button to="contact"  
