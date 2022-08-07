@@ -1,6 +1,8 @@
 import { Transition } from "@headlessui/react";
 import React,{useState} from "react";
 import {MdDeveloperMode} from 'react-icons/md';
+import { BrowserRouter as Link } from 'react-router-dom';
+
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,41 +19,31 @@ function Nav() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <button to="about"  
-                  onClick={()=>setIsOpen(false)}
-                  href="#"
+                  <Link to="/Website"
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Website
-                  </button>
+                  </Link>
 
-                  <button to="skill"  
-                  onClick={()=>setIsOpen(false)}
-                  href="#"
+                  <button to="/Mobile"  
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Mobile
                   </button>
 
-                  <button to="project"
-                  onClick={()=>setIsOpen(false)}
-                    href="#"
+                  <button to="/Desktop"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Desktop
                   </button>
 
-                  <button to="service" 
-                  onClick={()=>setIsOpen(false)}
-                  href="#"
+                  <button to="/Iot" 
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     IOT
                   </button>
 
-                  <button to="contact" 
-                  onClick={()=>setIsOpen(false)}
-                  href="#"
+                  <button to="/Contact" 
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Contact
@@ -118,45 +110,35 @@ function Nav() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <button to="about"  
-                  onClick={()=>setIsOpen(false)}
-                  href="#"
+                <Link to="/Website"
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Website
-                </button>
+                </Link>
 
-                <button to="skill"  
-                  onClick={()=>setIsOpen(false)}
-                  href="#"
+                <Link to="/Mobile"  
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                    Mobile
-                </button>
+                </Link>
 
-                <button to="project"  
-                  onClick={()=>setIsOpen(false)}
-                  href="#"
+                <Link to="/Desktop"  
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Desktop
-                </button>
+                </Link>
 
-                <button to="service"  
-                  onClick={()=>setIsOpen(false)}
-                  href="#"
+                <Link to="/Iot"  
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   IOT
-                </button>
+                </Link>
 
-                <button to="contact"  
-                  onClick={()=>setIsOpen(false)}
-                  href="#"
+                <Link to="/Contact"  
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contact
-                </button>
+                </Link>
               </div>
             </div>
           )}
