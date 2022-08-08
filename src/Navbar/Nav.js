@@ -13,12 +13,18 @@ function Nav() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <button href="#" to="home">
+                <Link to="/">
                 <MdDeveloperMode class="w-10 h-10 text-red-500"/>
-                </button>
+                </Link>
               </div>
+              <nav>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
+                <Link to="/"
+                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    Home
+                  </Link>
                   <Link to="/Website"
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
@@ -50,6 +56,7 @@ function Nav() {
                   </button>
                 </div>
               </div>
+              </nav>
             </div>
             <div className="-mr-2 flex md:hidden">
               <button
