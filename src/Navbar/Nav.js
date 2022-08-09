@@ -26,20 +26,25 @@ function Nav() {
         <Link to="/"></Link>
         
         <Link to="/Website"
-        className=" hover:text-red-200 text-white px-3 py-2 rounded-md text-sm font-medium "
+        className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
+        px-3 py-2 rounded-md text-sm font-medium"
         >Website</Link>
         <Link to="/Mobile"
-        className=" hover:text-red-200 text-white px-3 py-2 rounded-md text-sm font-medium"
+        className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
+         px-3 py-2 rounded-md text-sm font-medium"
 
         >Mobile</Link>
         <Link to="/Desktop"
-        className=" hover:text-red-200 text-white px-3 py-2 rounded-md text-sm font-medium"
+        className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
+        px-3 py-2 rounded-md text-sm font-medium"
         >Desktop</Link>
         <Link to="/Iot"
-        className=" hover:text-red-200 text-white px-3 py-2 rounded-md text-sm font-medium"
-        >Iot</Link>
+        className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
+        px-3 py-2 rounded-md text-sm font-medium"
+        >IoT</Link>
         <Link to="/Contact"
-        className=" hover:text-red-200 text-white px-3 py-2 rounded-md text-sm font-medium"
+        className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
+        px-3 py-2 rounded-md text-sm font-medium"
         >Contact</Link>
          
         </div>
@@ -105,31 +110,31 @@ function Nav() {
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <Link to="/Website"
-                  className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
                   Website
                 </Link>
 
                 <Link to="/Mobile"  
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
                    Mobile
                 </Link>
 
                 <Link to="/Desktop"  
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
                   Desktop
                 </Link>
 
                 <Link to="/Iot"  
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
-                  IOT
+                  IoT
                 </Link>
 
                 <Link to="/Contact"  
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  className="block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contact
                 </Link>
