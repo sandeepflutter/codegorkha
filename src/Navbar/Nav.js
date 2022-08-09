@@ -1,75 +1,63 @@
+
+import React, {useState} from "react";
+import {Link } from 'react-router-dom';
 import { Transition } from "@headlessui/react";
-import React,{useState} from "react";
-import {MdDeveloperMode} from 'react-icons/md';
-import { BrowserRouter as Link } from 'react-router-dom';
+import logo from '../Asset/logo.png';
+
 
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="sticky top-0 z-50">
-      <nav className="bg-gray-800 ">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center">
-              <div className="flex-shrink-0">
+    <div className="sticky z-50 bg-gray-800 " >
+      <div className=" px-4 sm:px-6 lg:px-8">
+      <div className="relative flex items-center justify-center h-12">
+      
+      <div className="flex flex-1 lg:flex-none sm:flex-1 md:flex-none items-center justify-center">
+
                 <Link to="/">
-                <MdDeveloperMode class="w-10 h-10 text-red-500"/>
+                <img src={logo} alt="1" class="w-8 h-8 items-center justify-center content-center "/>
                 </Link>
               </div>
-              <nav>
-              <div className="hidden md:block">
-                <div className="ml-10 flex items-baseline space-x-4">
-                <Link to="/"
-                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Home
-                  </Link>
-                  <Link to="/Website"
-                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Website
-                  </Link>
+              
+     <nav className="nav-links justify-center">
+     <div className="hidden md:block">
+     <div className="ml-10 flex items-baseline space-x-4">
+        <Link to="/"></Link>
+        
+        <Link to="/Website"
+        className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium "
+        >Website</Link>
+        <Link to="/Mobile"
+        className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
 
-                  <button to="/Mobile"  
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Mobile
-                  </button>
+        >Mobile</Link>
+        <Link to="/Desktop"
+        className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+        >Desktop</Link>
+        <Link to="/Iot"
+        className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+        >Iot</Link>
+        <Link to="/Contact"
+        className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+        >Contact</Link>
+         
+        </div>
+        </div>
+     </nav>
 
-                  <button to="/Desktop"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Desktop
-                  </button>
-
-                  <button to="/Iot" 
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    IOT
-                  </button>
-
-                  <button to="/Contact" 
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Contact
-                  </button>
-                </div>
-              </div>
-              </nav>
-            </div>
-            <div className="-mr-2 flex md:hidden">
+     <div className="-mr-2 flex md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="bg-gray-900 inline-flex p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
                 <span className="sr-only">Open main menu</span>
                 {!isOpen ? (
                   <svg
-                    className="block h-6 w-6"
+                    className="block h-6 w-6 "
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -85,7 +73,7 @@ function Nav() {
                   </svg>
                 ) : (
                   <svg
-                    className="block h-6 w-6"
+                    className="block h-6 w-6  "
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
                     viewBox="0 0 24 24"
@@ -102,10 +90,9 @@ function Nav() {
                 )}
               </button>
             </div>
-          </div>
-        </div>
-
-        <Transition
+     </div>
+     </div>
+     <Transition
           show={isOpen}
           enter="transition ease-out duration-100 transform"
           enterFrom="opacity-0 scale-95"
@@ -146,13 +133,14 @@ function Nav() {
                 >
                   Contact
                 </Link>
+
+              
               </div>
             </div>
           )}
         </Transition>
-      </nav>
-    </div>
-  );
-}
+  </div>       
+);     
+}   
 
 export default Nav;

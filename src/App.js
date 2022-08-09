@@ -1,5 +1,5 @@
 import React from "react";
-import Nav1 from "./Navbar/Nav1";
+import Nav from "./Navbar/Nav";
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Website from "./Link/Website";
 import Mobile from "./Link/Mobile";
@@ -10,22 +10,25 @@ import Home from "./Link/Home";
 import Career from "./Link/Career";
 
 
+
 function App() {
   return (
-    <>
+  
 <Router>
-  <Nav1/>
+  <div>
+        <Nav/>
 <Routes>
-<Route exact path="/"><App/></Route>
-        <Route exact path="/Website"><Website/></Route>
-        <Route exact path="/Mobile"><Mobile/></Route>
-        <Route exact path="/Desktop"><Desktop/></Route>
-        <Route exact path="/Iot"><Iot/></Route>
-        <Route exact path="/Contact"><Contact/></Route>
-        <Route exact path="/Career"><Career/></Route>
+<Route path="/" exact element={<Home/>} />
+        <Route path="/Website" element={<Website/>}/>
+        <Route path="/Mobile" element={<Mobile/>}/>
+        <Route path="/Desktop" element={<Desktop/>}/>
+        <Route path="/Iot" element={<Iot/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
+        <Route path="/Career" element={<Career/>}/>
+        
 </Routes>
+</div>
 </Router>
-</>
   );
 }
 
