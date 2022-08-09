@@ -16,23 +16,23 @@ function Nav() {
       
       <div className="flex flex-1 lg:flex-none sm:flex-1 md:flex-none items-center justify-center">
 
-                <Link to="/">
-                <img src={logo} alt="1" class="w-8 h-8 items-center justify-center content-center "/>
+                <Link exact to="/" >
+                <img src={logo} alt="1" class="w-8 h-8 items-center justify-center content-center border  rounded-full border-white"/>
                 </Link>
               </div>
               
      <nav className="nav-links justify-center">
      <div className="hidden md:block">
      <div className="ml-10 flex items-baseline space-x-4">
-        <Link to="/" onClick={()=>setIsOpen(false)}></Link>
         
         <NavLink to="/Website" onClick={()=>setIsOpen(false)} 
         ActiveClassName="active"
         className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
-        px-3 py-2 rounded-md text-sm font-medium"
+        px-1 py-2 rounded-md text-sm font-medium"
         >Website</NavLink>
 
         <NavLink to="/Mobile" onClick={()=>setIsOpen(false)}
+        ActiveClassName="active"
         className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
          px-3 py-2 rounded-md text-sm font-medium"
 
@@ -116,7 +116,8 @@ function Nav() {
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <NavLink to="/Website" onClick={()=>setIsOpen(false)}
-                ActiveClassName="active"
+                
+              ActiveClassName="active"
                 className="block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
                   Website
