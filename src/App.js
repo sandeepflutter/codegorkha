@@ -8,7 +8,7 @@ import Iot from "./Link/Iot";
 import Contact from "./Link/Contact";
 import Home from "./Link/Home";
 import Career from "./Link/Career";
-
+import data from "./Link/data";
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
         <Route path="/Mobile" element={<Mobile/>}/>
         <Route path="/Desktop" element={<Desktop/>}/>
         <Route path="/Iot" element={<Iot/>}/>
-        <Route path="/Contact" element={<Contact/>}/>
+        <Route   path="/Contact" element={<Contact social={data.social}/>}/>
         <Route path="/Career" element={<Career/>}/>
         
 </Routes>
