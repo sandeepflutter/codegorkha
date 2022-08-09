@@ -1,8 +1,9 @@
 
 import React, {useState} from "react";
-import {Link } from 'react-router-dom';
+import {Link, NavLink } from 'react-router-dom';
 import { Transition } from "@headlessui/react";
 import logo from '../Asset/logo.png';
+import '../App.css';
 
 
 
@@ -23,29 +24,34 @@ function Nav() {
      <nav className="nav-links justify-center">
      <div className="hidden md:block">
      <div className="ml-10 flex items-baseline space-x-4">
-        <Link to="/"></Link>
+        <Link to="/" onClick={()=>setIsOpen(false)}></Link>
         
-        <Link to="/Website"
+        <NavLink to="/Website" onClick={()=>setIsOpen(false)} 
+        ActiveClassName="active"
         className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
         px-3 py-2 rounded-md text-sm font-medium"
-        >Website</Link>
-        <Link to="/Mobile"
+        >Website</NavLink>
+
+        <NavLink to="/Mobile" onClick={()=>setIsOpen(false)}
         className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
          px-3 py-2 rounded-md text-sm font-medium"
 
-        >Mobile</Link>
-        <Link to="/Desktop"
+        >Mobile</NavLink>
+        <NavLink to="/Desktop" onClick={()=>setIsOpen(false)}
+        ActiveClassName="active"
         className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
         px-3 py-2 rounded-md text-sm font-medium"
-        >Desktop</Link>
-        <Link to="/Iot"
+        >Desktop</NavLink>
+        <NavLink to="/Iot" onClick={()=>setIsOpen(false)}
+        ActiveClassName="active"
         className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
         px-3 py-2 rounded-md text-sm font-medium"
-        >IoT</Link>
-        <Link to="/Contact"
+        >IoT</NavLink>
+        <NavLink to="/Contact" onClick={()=>setIsOpen(false)}
+        ActiveClassName="active"
         className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
         px-3 py-2 rounded-md text-sm font-medium"
-        >Contact</Link>
+        >Contact</NavLink>
          
         </div>
         </div>
@@ -109,35 +115,40 @@ function Nav() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <Link to="/Website"
-                  className="block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
+                <NavLink to="/Website" onClick={()=>setIsOpen(false)}
+                ActiveClassName="active"
+                className="block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
                   Website
-                </Link>
+                </NavLink>
 
-                <Link to="/Mobile"  
+                <NavLink to="/Mobile"  onClick={()=>setIsOpen(false)}
+                ActiveClassName="active"
                   className="block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
                    Mobile
-                </Link>
+                </NavLink>
 
-                <Link to="/Desktop"  
+                <NavLink to="/Desktop"  onClick={()=>setIsOpen(false)}
+                ActiveClassName="active"
                   className="block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
                   Desktop
-                </Link>
+                </NavLink>
 
-                <Link to="/Iot"  
+                <NavLink to="/Iot"  onClick={()=>setIsOpen(false)}
+                ActiveClassName="active"
                   className="block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
                   IoT
-                </Link>
+                </NavLink>
 
-                <Link to="/Contact"  
+                <NavLink to="/Contact"  onClick={()=>setIsOpen(false)}
+                ActiveClassName="active"
                   className="block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contact
-                </Link>
+                </NavLink>
 
               
               </div>
