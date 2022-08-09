@@ -9,7 +9,7 @@ import logo from '../Asset/logo.png';
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="sticky z-50 bg-gray-800 " >
+    <div className="sticky z-50 bg-blue-500 " >
       <div className=" px-4 sm:px-6 lg:px-8">
       <div className="relative flex items-center justify-center h-12">
       
@@ -26,20 +26,20 @@ function Nav() {
         <Link to="/"></Link>
         
         <Link to="/Website"
-        className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium "
+        className=" hover:text-red-200 text-white px-3 py-2 rounded-md text-sm font-medium "
         >Website</Link>
         <Link to="/Mobile"
-        className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+        className=" hover:text-red-200 text-white px-3 py-2 rounded-md text-sm font-medium"
 
         >Mobile</Link>
         <Link to="/Desktop"
-        className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+        className=" hover:text-red-200 text-white px-3 py-2 rounded-md text-sm font-medium"
         >Desktop</Link>
         <Link to="/Iot"
-        className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+        className=" hover:text-red-200 text-white px-3 py-2 rounded-md text-sm font-medium"
         >Iot</Link>
         <Link to="/Contact"
-        className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+        className=" hover:text-red-200 text-white px-3 py-2 rounded-md text-sm font-medium"
         >Contact</Link>
          
         </div>
@@ -50,7 +50,7 @@ function Nav() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="bg-gray-900 inline-flex p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800"
+                className="bg-blue-600 inline-flex p-2 rounded-md text-white hover:text-white hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-blue-800"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
