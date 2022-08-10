@@ -10,8 +10,8 @@ import {FaInstagram}from 'react-icons/fa';
 
 export const Contact = ({social: {youtube, github, medium, facebook, twitter, email, insta}}) => {
     return (
-    
-      <div id="skill" className="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-2">
+    <div className='bg-blue-100'>
+      <div id="skill" className=" mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-2">
 
 
 <section class="text-black body-font relative">
@@ -116,6 +116,7 @@ export const Contact = ({social: {youtube, github, medium, facebook, twitter, em
 
   
 </div>
+      </div>
       </div>
     );
   };

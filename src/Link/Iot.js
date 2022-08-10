@@ -1,54 +1,12 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/effect-cube";
-import "swiper/css/pagination";
-
-
-
-import { EffectCube, Pagination } from "swiper";
-
 
 export const Iot = () => {
     return (
     
-      <div id="skill" className="px-4  py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div id="skill" className="pt-5">
      <p className="text-center font-bold text-3xl"> IoT (Internet of Things)</p>
 
-<div className="h-96 w-96">
-<>
-      <Swiper
-        effect={"cube"}
-        grabCursor={true}
-        
-        cubeEffect={{
-          shadow: true,
-          slideShadows: true,
-          shadowOffset: 20,
-          shadowScale: 0.94,
-        
-        }}
-        
-        modules={[EffectCube]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-      </Swiper>
-    </>
+<div className=" absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+<p className="font-bold text-[8vh] uppercase">We'll be there soon.</p>
 </div>
 
       </div>
