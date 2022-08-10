@@ -1,5 +1,5 @@
 
-        import React, { useRef, useState } from "react";
+        import React from "react";
         // Import Swiper React components
         import { Swiper, SwiperSlide } from "swiper/react";
         
@@ -43,16 +43,16 @@
                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" alt=""/>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt=""/>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" alt="" />
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" alt=""/>
                 </SwiperSlide>
               </Swiper>
             </>

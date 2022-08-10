@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import { Tab } from '@headlessui/react'
 import logo from '../Asset/logo.png';
+import f from '../Asset/f.png'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -45,7 +46,22 @@ export const Desktop = () => {
 
      
       
-
+<div>
+  <h1 class="">Tech We Work With</h1>
+  <h1 class="">FRONT END</h1>
+  <section class="text-gray-700 body-font">
+  <div class="container px-5 py-2 mx-auto">
+    <div class="flex flex-wrap -m-4 text-center">
+      <div class="p-4 md:w-1/6 sm:w-1/3 w-1/2">
+        <div class="px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+        <img src={f} class=" w-12 h-12 mb-3 inline-block"/>
+          <p class="leading-relaxed">Flutter</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
   
 
       
@@ -95,7 +111,7 @@ export const Desktop = () => {
 
 <div class="Aligne-center">
     <div class="">
-      <div class="card m-2 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200">
+      <div class="card m-2 cursor-pointer border border-gray-500 rounded-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200">
         <div class="m-3">
 
         <a href="#" class="flex flex-col items-center md:flex-row">

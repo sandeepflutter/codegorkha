@@ -42,11 +42,6 @@ function Nav() {
         className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
         px-3 py-2 rounded-md text-sm font-medium"
         >Desktop</NavLink>
-        <NavLink to="/Iot" onClick={()=>setIsOpen(false)}
-        ActiveClassName="active"
-        className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
-        px-3 py-2 rounded-md text-sm font-medium"
-        >IoT</NavLink>
         <NavLink to="/Contact" onClick={()=>setIsOpen(false)}
         ActiveClassName="active"
         className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
@@ -135,13 +130,6 @@ function Nav() {
                   className="block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
                   Desktop
-                </NavLink>
-
-                <NavLink to="/Iot"  onClick={()=>setIsOpen(false)}
-                ActiveClassName="active"
-                  className="block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
-                >
-                  IoT
                 </NavLink>
 
                 <NavLink to="/Contact"  onClick={()=>setIsOpen(false)}

@@ -2,6 +2,16 @@
 import { useState } from 'react'
 import { Tab } from '@headlessui/react'
 import logo from '../Asset/logo.png';
+import {AiFillHtml5} from 'react-icons/ai'
+import {IoLogoCss3} from 'react-icons/io'
+import {DiJavascript} from 'react-icons/di'
+import {GrReactjs} from 'react-icons/gr'
+import {SiTailwindcss} from 'react-icons/si'
+import f from '../Asset/f.png'
+
+
+
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -69,7 +79,64 @@ export const Website = () => {
 
       
   
+<div>
+  <h1 class="">Tech We Work With</h1>
+  <h1 class="">FRONT END</h1>
+  <section class="text-gray-700 body-font">
+  <div class="container px-5 py-2 mx-auto">
+   
+    <div class="flex flex-wrap -m-4 text-center">
 
+      <div class="p-4 md:w-1/6 sm:w-1/3 w-1/2">
+      <div class="px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+          <AiFillHtml5 class="text-orange-500 w-12 h-12 mb-3 inline-block"/>
+          <p class="leading-relaxed">HTML</p>
+        </div>
+      </div>
+
+      <div class="p-4 md:w-1/6 sm:w-1/3 w-1/2">
+        <div class="px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+        <IoLogoCss3 class="text-blue-500 w-12 h-12 mb-3 inline-block"/>
+          <p class="leading-relaxed">CSS</p>
+        </div>
+      </div>
+
+
+
+      <div class="p-4 md:w-1/6 sm:w-1/3 w-1/2">
+        <div class="px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+         <DiJavascript class="text-yellow-500 w-12 h-12 mb-3 inline-block"/>
+          <p class="leading-relaxed">JavaScript</p>
+        </div>
+      </div>
+
+
+<div class="p-4 w-1/2 md:w-1/6 sm:w-1/3">
+        <div class="x-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+         <GrReactjs class="text-cyan-500 w-12 h-12 mb-3 inline-block"/>
+          <p class="leading-relaxed">React JS</p>
+        </div>
+      </div>
+
+      <div class="p-4 w-1/2 md:w-1/6 sm:w-1/3">
+        <div class="px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+        <SiTailwindcss class="text-sky-500 w-12 h-12 mb-3 inline-block"/>
+          <p class="leading-relaxed">Tailwind CSS</p>
+        </div>
+      </div>
+
+
+
+      <div class="p-4 md:w-1/6 sm:w-1/3 w-1/2">
+        <div class="px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+        <img src={f} class=" w-12 h-12 mb-3 inline-block"/>
+          <p class="leading-relaxed">Flutter</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
  
 <div className="w-full justify-center flex items-center">
 <div className="w-full max-w-6xl px-2 py-2 sm:px-0 ">
@@ -112,10 +179,10 @@ export const Website = () => {
 
 <div class="Aligne-center">
     <div class="">
-      <div class="card m-2 cursor-pointer border border-gray-400 rounded-lg hover:shadow-md hover:border-opacity-0 transform hover:-translate-y-1 transition-all duration-200">
+      <div class="card m-2 cursor-pointer border border-gray-500 rounded-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-400">
         <div class="m-3">
 
-        <a href="#" class="flex flex-col items-center md:flex-row">
+        <a href={null} class="flex flex-col items-center md:flex-row">
     <img class="object-contain w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src={logo} alt=""/>
     <div class="flex flex-col justify-between p-4 leading-normal">
       <div class="flex items-center justify-between">
