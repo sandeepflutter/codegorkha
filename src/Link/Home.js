@@ -18,9 +18,6 @@ export const Home = () => {
         </Link>
    <Screen/>
    <Screen/>
-   <Screen/>
-   <Screen/>
-   <Screen/>
     </div>
 </div>
 </div>

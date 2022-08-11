@@ -8,6 +8,7 @@ import {DiJavascript} from 'react-icons/di'
 import {GrReactjs} from 'react-icons/gr'
 import {SiTailwindcss} from 'react-icons/si'
 import f from '../Asset/f.png'
+import a from '../Asset/a.jpg'
 
 
 
@@ -25,28 +26,36 @@ export const Website = () => {
     Company: [
       {
         id: 1,
-        title: 'Is tech making coffee better or worse?',
-        date: 'Jan 7',
+        title: 'ASHRAYA ENGINEERING',
+        date: 'The company expertise lies in the fields of commercial and residential architectural design supervision and measurement, and cost estimation for residential and commercial buildings. We also have a highly specialized team in land surveying.',
+        url: "https://www.ashrayaengineering.com.np/",
+        img: a,
 
       },
       {
         id: 2,
-        title: 'The most innovative things happening in coffee',
-        date: 'Mar 19',
+        title: 'Code Gorkha',
+        date: 'Mar 19',   
+        url: "https://www.codegorkha.com.np/",
+        img: logo,
 
       },
     ],
     Personal: [
       {
         id: 1,
-        title: 'Ask Me Anything: 10 answers to your questions about coffee',
-        date: '2d ago',
+        title: 'Sandeep Budha',
+        date: 'The company expertise lies in the fields of commercial and residential architectural design supervision and measurement, and cost estimation for residential and commercial buildings. We also have a highly specialized team in land surveying.',
+        url: "https://sandeepbudha.com.np/",
+        img: a,
 
       },
       {
         id: 2,
-        title: "The worst advice we've ever heard about coffee",
-        date: '4d ago',
+        title: 'Sandeep Budha',
+        date: 'Mar 19',   
+        url: "https://portfolio-57d8a.web.app/",
+        img: logo,
 
       },
     ],
@@ -129,7 +138,7 @@ export const Website = () => {
 
       <div class="p-4 md:w-1/6 sm:w-1/3 w-1/2">
         <div class="px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-        <img src={f} class=" w-12 h-12 mb-3 inline-block"/>
+        <img src={f} alt="img1" class=" w-12 h-12 mb-3 inline-block"/>
           <p class="leading-relaxed">Flutter</p>
         </div>
       </div>
@@ -182,14 +191,14 @@ export const Website = () => {
       <div class="card m-2 cursor-pointer border border-gray-500 rounded-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-400">
         <div class="m-3">
 
-        <a href={null} class="flex flex-col items-center md:flex-row">
-    <img class="object-contain w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src={logo} alt=""/>
+        <a href={post.url} target="_blank" rel="noreferrer" class="flex flex-col items-center md:flex-row">
+    <img class="object-contain w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src={post.img} alt="img"/>
     <div class="flex flex-col justify-between p-4 leading-normal">
       <div class="flex items-center justify-between">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 lg:pr-10">{post.title}</h5>
         <h5 class="text-sm text-teal-800 font-mono bg-teal-100 inline rounded-full px-2 align-top float-right animate-pulse">Tag</h5>
         </div>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> {post.date}</p>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify"> {post.date}</p>
     </div>
 </a>
         

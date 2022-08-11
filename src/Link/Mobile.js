@@ -9,7 +9,6 @@ function classNames(...classes) {
 }
 
 
-
 export const Mobile = () => {
 
   let [categories] = useState({

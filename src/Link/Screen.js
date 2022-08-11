@@ -37,8 +37,7 @@
                   autoplay: { delay: 0.01 , disableOnInteraction: false, }
                 }}
         
-                
-                
+                    
                 modules={[EffectCube]}
                 className="mySwiper"
               >
