@@ -4,13 +4,13 @@ const data = {
     title: "👨‍💻 Developer + Designer",
     social: {
       youtube:"https://www.youtube.com/channel/UCyy7M1asH-tQZQoNEedOwag",
-      github: "https://github.com/sandeepflutter",
-      medium:"https://medium.com/@sandeepbudha.sb",
+      github: "https://github.com/codegorkha",
+      medium:"https://medium.com/@codegorkha",
       facebook: "https://www.facebook.com/codegorkha/",
-      twitter: "https://twitter.com/sbSandeepbudha",
-      insta:"https://www.instagram.com/official_sandeepbudha/",
-      linkedin:"https://www.linkedin.com/in/sandeep-budha-3638b88a/",
-      email: "sandeepbudha.sb@gmail.com",
+      twitter: "https://twitter.com/CodeGorkha",
+      insta:"https://www.instagram.com/codegorkha/",
+      linkedin:"https://www.linkedin.com/in/code-gorkha-027876248/",
+      email: "codegorkha@gmail.com",
     },
   
   

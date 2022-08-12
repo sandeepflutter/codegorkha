@@ -1,8 +1,8 @@
 
 import { useState } from 'react'
 import { Tab } from '@headlessui/react'
-import logo from '../Asset/logo.png';
 import f from '../Asset/f.png'
+import w from '../Asset/wt.jpg'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -16,10 +16,11 @@ export const Desktop = () => {
     Windows: [
       {
         id: 1,
-        title: 'Does drinking coffee make you smarter?',
-        date: '5h ago',
-        commentCount: 5,
-        shareCount: 2,
+        title: 'Desktop App',
+        date: "World Tour is a tourist guide Desktop application which gives details about countries and it's tourist destination.",
+        url: "https://drive.google.com/file/d/1DB8Ls6-yx0f5TdoyEXherLC0pl1kmnoK/view?fbclid=IwAR3i0c-Ie-SoibcZfMDQOcTpsKEnDcF129Q702RT299JkBo3zlu8BBKws_o",
+        img: w,
+        tag: f,
       },
     ],
   })
@@ -52,7 +53,7 @@ export const Desktop = () => {
     <div class="flex flex-wrap -m-4 text-center">
       <div class="p-4 md:w-1/6 sm:w-1/3 w-1/2">
         <div class="px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-        <img src={f} class=" w-12 h-12 mb-3 inline-block"/>
+        <img src={f} class=" w-12 h-12 mb-3 inline-block" alt=''/>
           <p class="leading-relaxed">Flutter</p>
         </div>
       </div>
@@ -110,14 +111,14 @@ export const Desktop = () => {
 <div class="Aligne-center">
     <div class="">
       <div class="card m-2 cursor-pointer border border-gray-500 rounded-lg hover:shadow-lg transform hover:-translate-y-1 transition-all duration-200">
-        <div class="m-3">
+       <div class="m-3">
 
-        <a href="#" class="flex flex-col items-center md:flex-row">
-    <img class="object-contain w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src={logo} alt=""/>
+        <a href={post.url} class="flex flex-col items-center md:flex-row" target="_blank" rel="noreferrer">
+    <img class="object-contain w-full h-96 rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src={post.img} alt=""/>
     <div class="flex flex-col justify-between p-4 leading-normal">
       <div class="flex items-center justify-between">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 lg:pr-10">{post.title}</h5>
-        <h5 class="text-sm text-teal-800 font-mono bg-teal-100 inline rounded-full px-2 align-top float-right animate-pulse">Tag</h5>
+        <img class="text-sm inline rounded-full px-2 align-top float-right animate-pulse  h-5" src={post.tag} alt="tag"/>
         </div>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400"> {post.date}</p>
     </div>

@@ -1,7 +1,6 @@
 
 import { useState } from 'react'
 import { Tab } from '@headlessui/react'
-import logo from '../Asset/logo.png';
 import {AiFillHtml5} from 'react-icons/ai'
 import {IoLogoCss3} from 'react-icons/io'
 import {DiJavascript} from 'react-icons/di'
@@ -9,6 +8,7 @@ import {GrReactjs} from 'react-icons/gr'
 import {SiTailwindcss} from 'react-icons/si'
 import f from '../Asset/f.png'
 import a from '../Asset/a.jpg'
+import r from '../Asset/r.png'
 
 
 
@@ -30,32 +30,7 @@ export const Website = () => {
         date: 'The company expertise lies in the fields of commercial and residential architectural design supervision and measurement, and cost estimation for residential and commercial buildings. We also have a highly specialized team in land surveying.',
         url: "https://www.ashrayaengineering.com.np/",
         img: a,
-
-      },
-      {
-        id: 2,
-        title: 'Code Gorkha',
-        date: 'Mar 19',   
-        url: "https://www.codegorkha.com.np/",
-        img: logo,
-
-      },
-    ],
-    Personal: [
-      {
-        id: 1,
-        title: 'Sandeep Budha',
-        date: 'The company expertise lies in the fields of commercial and residential architectural design supervision and measurement, and cost estimation for residential and commercial buildings. We also have a highly specialized team in land surveying.',
-        url: "https://sandeepbudha.com.np/",
-        img: a,
-
-      },
-      {
-        id: 2,
-        title: 'Sandeep Budha',
-        date: 'Mar 19',   
-        url: "https://portfolio-57d8a.web.app/",
-        img: logo,
+        tag: r,
 
       },
     ],
@@ -196,7 +171,7 @@ export const Website = () => {
     <div class="flex flex-col justify-between p-4 leading-normal">
       <div class="flex items-center justify-between">
         <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 lg:pr-10">{post.title}</h5>
-        <h5 class="text-sm text-teal-800 font-mono bg-teal-100 inline rounded-full px-2 align-top float-right animate-pulse">Tag</h5>
+        <img class="text-sm inline rounded-full px-2 align-top float-right animate-pulse  h-5" src={post.tag} alt="tag"/>
         </div>
         <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 text-justify"> {post.date}</p>
     </div>
