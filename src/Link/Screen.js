@@ -18,7 +18,6 @@
         
               <section id="service" class="text-gray-400 body-font bg-gray-900 pb-10">
               <div id="skill" className="px-4  py-10 mx-auto md:max-w-full  md:px-12 lg:px-8 lg:py-10">
-             <p className="ext-center font-bold text-3xl"> Website</p>
         <div className="flex justify-center items-center">
         <div className="h-72 w-96 text-center">
         <>
