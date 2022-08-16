@@ -28,24 +28,24 @@ function Nav() {
         <NavLink to="/Website" onClick={()=>setIsOpen(false)} 
         ActiveClassName="active"
         className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
-        px-1 py-2 rounded-md text-sm font-medium"
+        px-1 py-2 rounded-md text-sm font-medium font-work"
         >Website</NavLink>
 
         <NavLink to="/Mobile" onClick={()=>setIsOpen(false)}
         ActiveClassName="active"
         className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
-         px-3 py-2 rounded-md text-sm font-medium"
+         px-3 py-2 rounded-md text-sm font-medium font-work"
 
         >Mobile</NavLink>
         <NavLink to="/Desktop" onClick={()=>setIsOpen(false)}
         ActiveClassName="active"
         className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
-        px-3 py-2 rounded-md text-sm font-medium"
+        px-3 py-2 rounded-md text-sm font-medium font-work"
         >Desktop</NavLink>
         <NavLink to="/Contact" onClick={()=>setIsOpen(false)}
         ActiveClassName="active"
         className=" block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4
-        px-3 py-2 rounded-md text-sm font-medium"
+        px-3 py-2 rounded-md text-sm font-medium font-work"
         >Contact</NavLink>
          
         </div>
@@ -113,28 +113,28 @@ function Nav() {
                 <NavLink to="/Website" onClick={()=>setIsOpen(false)}
                 
               ActiveClassName="active"
-                className="block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
+                className="font-work block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
                   Website
                 </NavLink>
 
                 <NavLink to="/Mobile"  onClick={()=>setIsOpen(false)}
                 ActiveClassName="active"
-                  className="block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
+                  className="font-work block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
                    Mobile
                 </NavLink>
 
                 <NavLink to="/Desktop"  onClick={()=>setIsOpen(false)}
                 ActiveClassName="active"
-                  className="block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
+                  className=" font-work block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
                   Desktop
                 </NavLink>
 
                 <NavLink to="/Contact"  onClick={()=>setIsOpen(false)}
                 ActiveClassName="active"
-                  className="block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
+                  className="font-work block lg:inline-block text-blue-200 hover:text-white mr-4 hover:bg-blue-700 px-3 py-2 rounded-md text-base font-medium"
                 >
                   Contact
                 </NavLink>

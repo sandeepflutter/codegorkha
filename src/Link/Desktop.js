@@ -121,7 +121,7 @@ export const Desktop = () => {
                  </a>
                  <div class="pb-8 pt-5 px-4">
                  <h5 class="text-gray-900 text-xl font-medium pb-2 font-hahmlet">{post.title}</h5>
-                 <p class="text-gray-700 text-base mb-2 text-justify font-lora">
+                 <p class="text-gray-700 text-base mb-2 text-justify font-alegreya">
                  {post.date}
                  </p>
                  

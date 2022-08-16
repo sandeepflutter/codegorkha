@@ -68,7 +68,7 @@ export const Contact = ({social: {youtube, github, medium, facebook, twitter, em
     </div>
     <div class="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
       <h2 class="text-black text-lg mb-1 font-medium title-font text-center font-hahmlet">Write Us</h2>
-      <p class="text-center mb-5 font-hahmlet">Never hesitate to contact us.</p>
+      <p class="text-center mb-5 font-alegreya">Never hesitate to contact us.</p>
       {status && renderAlert()}
       <div class="relative mb-4">
         <label for="name" class="leading-7 text-sm text-black font-lora">Name</label>
@@ -89,7 +89,7 @@ export const Contact = ({social: {youtube, github, medium, facebook, twitter, em
 
 <div class="box-content h-fit w-100% p-4 border-t-4 border-red-400 ">
   <div>
-    <p className="text-center font-bold font-hahmlet">Connect With Us</p>
+    <p className="text-center font-bold font-oleo">Connect With Us</p>
   </div>
   <div className="flex align-center justify-center mt-1">
   

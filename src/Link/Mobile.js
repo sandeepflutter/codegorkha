@@ -144,7 +144,7 @@ export const Mobile = () => {
                  </a>
                  <div class="pb-8 pt-5 px-4">
                  <h5 class="text-gray-900 text-xl font-medium pb-2 font-hahmlet  ">{post.title}</h5>
-                 <p class="text-gray-700 text-base mb-2 text-justify font-lora  ">
+                 <p class="text-gray-700 text-base mb-2 text-justify font-alegreya  ">
                  {post.date}
                  </p>
                  <img class="text-sm inline rounded-full px-2 align-top float-right h-7" src={post.tag1} alt=""/>
