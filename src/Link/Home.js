@@ -1,6 +1,6 @@
 import React from "react";
 import {Link} from 'react-scroll';
-import Screen from "../Link/Screen";
+
 import {TiArrowSortedUp} from 'react-icons/ti';
 import Footer from "../Navbar/Footer";
 import Clients from "../Home/Clients";
@@ -15,7 +15,7 @@ export const Home = () => {
 <div className=" text-center">
 <div>
      
-   <Screen/>
+
    
     </div>
     
