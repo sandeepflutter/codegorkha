@@ -8,9 +8,10 @@
         import "swiper/css/effect-cube";
         import "swiper/css/pagination";
         import d from '../Asset/d.jpg';
+      
         
         
-        import { Navigation, EffectCube } from "swiper";
+        import { EffectCube, Pagination } from "swiper";
         
         
         export const Screen = () => {
@@ -23,30 +24,24 @@
         <div className="h-72 w-96 text-center">
         <>
               <Swiper
-                effect={"cube"}
-                grabCursor={true}
-                
-  
-                cubeEffect={{
-                  
-                  shadow: true,
-                  slideShadows: true,
-                  shadowOffset: 20,
-                  shadowScale: 0.94,
-                }}
-        
-                    
-                modules={[Navigation, EffectCube]}
-                pagination={true
-                }
-                className="mySwiper"
+                 effect={"cube"}
+                 grabCursor={true}
+                 cubeEffect={{
+                   shadow: true,
+                   slideShadows: true,
+                   shadowOffset: 20,
+                   shadowScale: 0.94,
+                 }}
+                 pagination={true}
+                 modules={[EffectCube, Pagination]}
+                 className="mySwiper"
               >
                 <SwiperSlide>
-                  <img src={d} alt=""/>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img src={d} alt=""/>
-                </SwiperSlide>
+          <img src={d} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={d} />
+        </SwiperSlide>
               </Swiper>
             </>
         </div>
