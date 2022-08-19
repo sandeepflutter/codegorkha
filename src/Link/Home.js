@@ -4,6 +4,7 @@ import {Link} from 'react-scroll';
 import {TiArrowSortedUp} from 'react-icons/ti';
 import Footer from "../Navbar/Footer";
 import Clients from "../Home/Clients";
+import Services from "../Home/Services";
 
 export const Home = () => {
     return (
@@ -25,6 +26,7 @@ export const Home = () => {
 
 
       </div> 
+      <Services/>
       <Clients/>
       <div className="bg-sky-900 justify-center flex items-center">
       <Link href="#" to="home" spy={true} smooth={true} duration={500} >
