@@ -5,6 +5,7 @@ import {TiArrowSortedUp} from 'react-icons/ti';
 import Footer from "../Navbar/Footer";
 import Clients from "../Home/Clients";
 import Services from "../Home/Services";
+import Features from "../Home/Features";
 
 export const Home = () => {
     return (
@@ -26,6 +27,7 @@ export const Home = () => {
 
 
       </div> 
+      <Features/>
       <Services/>
       <Clients/>
       <div className="bg-sky-900 justify-center flex items-center">
