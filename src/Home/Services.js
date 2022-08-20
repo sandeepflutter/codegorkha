@@ -22,7 +22,7 @@ export const Services = () => {
   <p className='text-center text-red-500 font-lora'>- What Do We offer -</p>
  
 </div>
-<div id="skill" className="px-4  py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
+<div id="skill" className="px-16  py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-32 lg:px-44 lg:py-10">
     <div className="grid row-gap-8 sm:row-gap-0 sm:grid-cols-2 lg:grid-cols-4">
 
         <div className="group p-8 border-b-2 sm:border-r-2 border-red-500 hover:bg-red-500 hover:ring-red-500  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
@@ -30,7 +30,7 @@ export const Services = () => {
             <div className="flex items-center justify-center w-10 h-10 mx-auto mb-4 sm:w-10 sm:h-10">
             <MdDeveloperMode className='w-full h-full  text-red-500 group-hover:text-white transition ease-in-out delay-150'/>
             </div>
-            <h6 className="mb-2 font-semibold leading-5 font-crimson text-red-500 group-hover:text-white transition ease-in-out delay-150 ">Custom Software Development</h6>
+            <h6 className="mb-2 font-semibold leading-5 font-crimson text-red-500 group-hover:text-white transition ease-in-out delay-150">Custom Software Development</h6>
           </div>
         </div>
 

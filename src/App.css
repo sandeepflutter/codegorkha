@@ -2,6 +2,7 @@
   @apply border-b-2 border-blue-200 no-underline font-bold text-white;
 }
 
+
 Link.link-wrapper > a.active {
     display: block;
     width: 100%;
