@@ -3,8 +3,9 @@ import {TbDrone} from 'react-icons/tb'
 import '../App.css';
 import Lottie from "lottie-react";
 import animationData from "../Asset/mob.json";
+import  feat from '../Asset/feature.json';
 
-export const Features = () => {
+export const Features  = () => {
 
    document.querySelectorAll( '.ciclegraph' ).forEach( ( ciclegraph )=>{
       let circles = ciclegraph.querySelectorAll( '.circle' )
@@ -16,62 +17,53 @@ export const Features = () => {
       }
     })
 
-      const feature = [
-        {
-            ico: TbDrone,
-            txt: "hello",
-          },
-
-          {
-            ico: TbDrone,
-            txt: "hello",
-          },
-
-          {
-            ico: TbDrone,
-            txt: "hello",
-          },
-
-          {
-            ico: TbDrone,
-            txt: "hello",
-          },
-      ];
-
-
-
-
       const feature1 = [
         {
             ico: TbDrone,
-            txt: "hello",
+            txt: "High-quality Code",
           },
 
           {
             ico: TbDrone,
-            txt: "hello",
+            txt: "Easy-to-use software",
           },
 
           {
             ico: TbDrone,
-            txt: "hello",
+            txt: "software development company with flexibility",
           },
 
           {
             ico: TbDrone,
-            txt: "hello",
+            txt: "Deliver on schedule",
           },
       ];
 
 
-      const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: animationData.default,
-        rendererSettings: {
-           preserveAspectRatio: "xMidYMid slice",
-        },
-     };
+
+
+      const feature = [
+        {
+            ico: TbDrone,
+            txt: "Application that is reliable",
+          },
+
+          {
+            ico: TbDrone,
+            txt: "Upfront cost-effective rate without any surprises",
+          },
+
+          {
+            ico: TbDrone,
+            txt: "Flexibility",
+          },
+
+          {
+            ico: TbDrone,
+            txt: "Technical assistance and support",
+          },
+      ];
+   
 
       
     return (
@@ -94,21 +86,21 @@ export const Features = () => {
          </div>
       </div>
       
-<div className='flex bg-blue-300 justify-between'>
-   <div className='bg-red-200'>
+<div className='flex justify-between'>
+   <div className=''>
    <>
         {feature1.map((item, index) => (
           <div key={index}>
 
 
-<div className='flex pb-5 '>
-
+<div className='flex pb-5 justify-end '>
+<p className='align-middle px-5 flex items-center justify-center text-right'>{item.txt}</p>
 <div class="p-1.5 w-24 h-24 border-2 border-black rounded-full">
   <div class="bg-gray-300 p-4 w-20 h-20 rounded-full flex items-center justify-center">
     <item.ico className='w-20 h-20'/>
   </div>
 </div>
-<p className='align-middle px-5 flex items-center justify-center'>{item.txt}</p>
+
 </div>
           </div>
         ))}
@@ -120,47 +112,43 @@ export const Features = () => {
 
 
 
-<div className='bg-teal-300 flex items-center justify-center'>
+<div className='flex items-center justify-center'>
 <div>
-  <TbDrone className='w-20 h-20'/>
-<Lottie options={defaultOptions} height={300} width={300} />
-   <p>hello</p>
+<Lottie animationData={feat} loop={true} height={200} width={200} />
     </div>
 </div>
 
 
 
 
-<div className='bg-teal-300'>
+<div className=''>
 <>
         {feature.map((item, index) => (
           <div key={index}>
 
 
 <div className='flex pb-5'>
-<p className='align-middle px-5 flex items-center justify-center'>{item.txt}</p>
+
 <div class="p-1.5 w-24 h-24 border-2 border-black rounded-full">
   <div class="bg-gray-300 p-4 w-20 h-20 rounded-full flex items-center justify-center">
     <item.ico className='w-20 h-20'/>
   </div>
 </div>
+<p className='align-middle px-5 flex items-center justify-center'>{item.txt}</p>
 </div>
           </div>
         ))}
    
     </>
 </div>
-
-
-
-
 </div>
 </div>
-
 </section>
     </div>
 </footer>
-    );
-  };
+    )
+  
+  }
+
   
   export default Features;

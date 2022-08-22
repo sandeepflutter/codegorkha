@@ -7,6 +7,7 @@ import Clients from "../Home/Clients";
 import Services from "../Home/Services";
 import Features from "../Home/Features";
 
+
 export const Home = () => {
     return (
       <div className="bg-blue-50">
@@ -27,6 +28,7 @@ export const Home = () => {
 
 
       </div> 
+
       <Features/>
       <Services/>
       <Clients/>
