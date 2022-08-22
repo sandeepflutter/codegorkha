@@ -4,6 +4,14 @@ import '../App.css';
 import Lottie from "lottie-react";
 import animationData from "../Asset/mob.json";
 import  feat from '../Asset/feature.json';
+import {FaCode} from 'react-icons/fa';
+import {FcSmartphoneTablet} from 'react-icons/fc';
+import {FcShipped} from 'react-icons/fc';
+import {FcMoneyTransfer} from 'react-icons/fc';
+import {BiWinkSmile} from 'react-icons/bi';
+import {MdSupportAgent} from 'react-icons/md';
+import {FaRegHandshake} from 'react-icons/fa';
+import {GiFlexibleStar} from 'react-icons/gi';
 
 export const Features  = () => {
 
@@ -19,22 +27,22 @@ export const Features  = () => {
 
       const feature1 = [
         {
-            ico: TbDrone,
+            ico: FaCode,
             txt: "High-quality Code",
           },
 
           {
-            ico: TbDrone,
+            ico: FcSmartphoneTablet,
             txt: "Easy-to-use software",
           },
 
           {
-            ico: TbDrone,
-            txt: "software development company with flexibility",
+            ico: GiFlexibleStar,
+            txt: "Flexibility",
           },
 
           {
-            ico: TbDrone,
+            ico: FcShipped,
             txt: "Deliver on schedule",
           },
       ];
@@ -44,23 +52,23 @@ export const Features  = () => {
 
       const feature = [
         {
-            ico: TbDrone,
+            ico: FaRegHandshake,
             txt: "Application that is reliable",
           },
 
           {
-            ico: TbDrone,
-            txt: "Upfront cost-effective rate without any surprises",
+            ico: FcMoneyTransfer,
+            txt: "Cost-effective rate",
           },
 
           {
-            ico: TbDrone,
-            txt: "Flexibility",
+            ico: BiWinkSmile,
+            txt: "100% work satisfaction",
           },
 
           {
-            ico: TbDrone,
-            txt: "Technical assistance and support",
+            ico: MdSupportAgent,
+            txt: "Tech assistance & support",
           },
       ];
    
@@ -68,7 +76,7 @@ export const Features  = () => {
       
     return (
       
-      <footer class=" bg-white body-font">
+      <div class=" bg-white body-font">
   <div class="">
     
 <section id="service" class="pt-5 lg:pt-[20px] pb-5 lg:pb-[9px] pl-5 pr-5">
@@ -86,7 +94,7 @@ export const Features  = () => {
          </div>
       </div>
       
-<div className='flex justify-between'>
+<div className='lg:flex md:flex sm:flex justify-between'>
    <div className=''>
    <>
         {feature1.map((item, index) => (
@@ -94,13 +102,12 @@ export const Features  = () => {
 
 
 <div className='flex pb-5 justify-end '>
-<p className='align-middle px-5 flex items-center justify-center text-right'>{item.txt}</p>
-<div class="p-1.5 w-24 h-24 border-2 border-black rounded-full">
-  <div class="bg-gray-300 p-4 w-20 h-20 rounded-full flex items-center justify-center">
-    <item.ico className='w-20 h-20'/>
+<p className='align-middle px-5 flex items-center justify-center text-right font-oleo text-[3vh]'>{item.txt}</p>
+<div class="p-1.5 lg:w-24 lg:h-24 sm:w-20 sm:h-20 border-2 border-black rounded-full hover:bg-red-200">
+  <div class="bg-red-300 hover:bg-red-500 p-4 lg:w-20 lg:h-20 sm:w-16 sm:h-16 rounded-full flex items-center justify-center">
+    <item.ico className='lg:w-20 lg:h-20 md:w-20 md:h-20 sm:w-10 sm:h-10 fill-green-800'/>
   </div>
 </div>
-
 </div>
           </div>
         ))}
@@ -119,22 +126,17 @@ export const Features  = () => {
 </div>
 
 
-
-
 <div className=''>
 <>
         {feature.map((item, index) => (
           <div key={index}>
-
-
 <div className='flex pb-5'>
-
-<div class="p-1.5 w-24 h-24 border-2 border-black rounded-full">
-  <div class="bg-gray-300 p-4 w-20 h-20 rounded-full flex items-center justify-center">
-    <item.ico className='w-20 h-20'/>
+<div class="p-1.5 lg:w-24 lg:h-24 sm:w-20 sm:h-20 border-2 border-black rounded-full hover:bg-red-200">
+  <div class="bg-red-300 hover:bg-red-500 p-4 lg:w-20 lg:h-20 sm:w-16 sm:h-16 rounded-full flex items-center justify-center">
+    <item.ico className='lg:w-20 lg:h-20 md:w-20 md:h-20 sm:w-10 sm:h-10 fill-green-800'/>
   </div>
 </div>
-<p className='align-middle px-5 flex items-center justify-center'>{item.txt}</p>
+<p className='align-middle px-5 flex items-center justify-center font-oleo text-[3vh]'>{item.txt}</p>
 </div>
           </div>
         ))}
@@ -145,9 +147,8 @@ export const Features  = () => {
 </div>
 </section>
     </div>
-</footer>
+</div>
     )
-  
   }
 
   

@@ -6,15 +6,15 @@ export const Footer = () => {
     
       <footer class="text-gray-400 bg-sky-900 body-font">
   <div class="container px-5 pt-10 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-    <div class="w-96 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+    <div class="flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
         <img src={logo} alt="" class="w-16 h-16 p-2 rounded-full border-white border-2"/> 
-        <span class="ml-3 text-xl font-work">Code Gorkha</span>
+        <p class="ml-3 text-xl font-work">Code Gorkha</p>
       </a>
       
       <p class="mt-2 mb-2 text-sm text-white font-amaranth">A full technology company that creates the future.</p>
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-      <img src={gp} alt='' class="mb-2 w-1/2 h-16 p-1"/>
+      <img src={gp} alt='' class="mb-2 w-1/2 h-12 lg:h-14 md:h-14 sm:h-14  p-1"/>
       </a>
     </div>
     <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">

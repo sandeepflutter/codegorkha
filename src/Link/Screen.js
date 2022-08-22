@@ -21,7 +21,7 @@
               <div id="skill" className="px-4  py-10 mx-auto md:max-w-full  md:px-12 lg:px-8 lg:py-10">
         <div className=" justify-center items-center">
           <p className="text-center text-[4vh] text-white p-5 font-fredericka">Clients Reviews</p>
-        <div className="h-72 w-96 text-center">
+        <div className="lg:h-72 lg:w-96 md:h-72 md:w-96 sm:h-72 sm:w-96 h-32 w-52 text-center">
         <>
               <Swiper
                  effect={"cube"}

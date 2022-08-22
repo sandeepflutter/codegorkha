@@ -6,6 +6,7 @@ import Footer from "../Navbar/Footer";
 import Clients from "../Home/Clients";
 import Services from "../Home/Services";
 import Features from "../Home/Features";
+import About from "../Home/About";
 
 
 export const Home = () => {
@@ -28,7 +29,7 @@ export const Home = () => {
 
 
       </div> 
-
+      <About />
       <Features/>
       <Services/>
       <Clients/>
