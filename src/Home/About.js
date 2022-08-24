@@ -1,9 +1,18 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../App.css';
 import Lottie from "lottie-react";
 import ab from '../Asset/pp.json';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 export const About  = () => {      
+useEffect(
+  ()=>{
+AOS.init({duration:1500})
+  },[]
+);
+
+
     return (
       
 <div class=" bg-blue-900 body-font">
@@ -13,7 +22,8 @@ export const About  = () => {
   
 
 
-<div className='lg:w-[200vh] md:w-[200vh]'>
+<div data-aos="fade-right"
+     data-aos-easing="ease-in-sine" className='lg:w-[200vh] md:w-[200vh]'>
       <div class="flex flex-wrap -mx-4">
 
          <div class="w-full px-4">
@@ -49,30 +59,36 @@ Through information technology, we hope to impact the lives of millions of peopl
 </div>
 </div>
 
-<div className='flex items-center justify-center'>
+<div data-aos="fade-left" 
+     data-aos-easing="ease-in-sine" className='flex items-center justify-center'>
 <div>
 <Lottie animationData={ab} loop={true} height={200} width={200} />
     </div>
 </div>
 </div>
 </section>
-<section class="text-gray-100 bg-blue-900 body-font">
+<section 
+      class="text-gray-100 bg-blue-900 body-font">
   <div class="container px-5 py-10 mx-auto">
     <div class="flex flex-wrap -m-4 text-center">
       <div class="p-4 sm:w-1/4 w-1/2">
-        <h2 class="title-font font-bold sm:text-2xl text-lg text-white ">1+</h2>
+        <h2 data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back" class="title-font font-bold sm:text-2xl text-lg text-white ">1+</h2>
         <p class="leading-relaxed font-amaranth">Years in Business</p>
       </div>
       <div class="p-4 sm:w-1/4 w-1/2">
-        <h2 class="title-font font-bold sm:text-2xl text-lg text-white">1+</h2>
+        <h2 data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back" class="title-font font-bold sm:text-2xl text-lg text-white">1+</h2>
         <p class="leading-relaxed font-amaranth">Ongoing Projects</p>
       </div>
       <div class="p-4 sm:w-1/4 w-1/2">
-        <h2 class="title-font font-bold sm:text-2xl text-lg text-white">1+</h2>
+        <h2 data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back" class="title-font font-bold sm:text-2xl text-lg text-white">1+</h2>
         <p class="leading-relaxed font-amaranth">Clients</p>
       </div>
       <div class="p-4 sm:w-1/4 w-1/2">
-        <h2 class="title-font font-bold sm:text-2xl text-lg text-white">4+</h2>
+        <h2 data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back" class="title-font font-bold sm:text-2xl text-lg text-white">4+</h2>
         <p class="leading-relaxed font-amaranth">Products</p>
       </div>
     </div>

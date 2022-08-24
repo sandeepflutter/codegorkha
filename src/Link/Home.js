@@ -7,6 +7,7 @@ import Clients from "../Home/Clients";
 import Services from "../Home/Services";
 import Features from "../Home/Features";
 import About from "../Home/About";
+import Landing from "../Home/Landing";
 
 
 export const Home = () => {
@@ -29,6 +30,7 @@ export const Home = () => {
 
 
       </div> 
+      <Landing/>
       <About />
       <Features/>
       <Services/>

@@ -1,8 +1,6 @@
-import React from 'react';
-import {TbDrone} from 'react-icons/tb'
+import React, {useEffect} from 'react';
 import '../App.css';
 import Lottie from "lottie-react";
-import animationData from "../Asset/mob.json";
 import  feat from '../Asset/feature.json';
 import {FaCode} from 'react-icons/fa';
 import {FcSmartphoneTablet} from 'react-icons/fc';
@@ -12,8 +10,16 @@ import {BiWinkSmile} from 'react-icons/bi';
 import {MdSupportAgent} from 'react-icons/md';
 import {FaRegHandshake} from 'react-icons/fa';
 import {GiFlexibleStar} from 'react-icons/gi';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 export const Features  = () => {
+
+  useEffect(
+    ()=>{
+  AOS.init({duration:1500})
+    },[]
+  );
 
    document.querySelectorAll( '.ciclegraph' ).forEach( ( ciclegraph )=>{
       let circles = ciclegraph.querySelectorAll( '.circle' )
@@ -101,7 +107,8 @@ export const Features  = () => {
           <div key={index}>
 
 
-<div className='flex pb-5 justify-end '>
+<div data-aos="fade-right"
+     data-aos-easing="ease-in-sine" className='flex pb-5 justify-end '>
 <p className='align-middle px-5 flex items-center justify-center text-right font-oleo text-[3vh]'>{item.txt}</p>
 <div class="p-1.5 lg:w-24 lg:h-24 sm:w-20 sm:h-20 border-2 border-black rounded-full hover:bg-red-200">
   <div class="bg-red-300 hover:bg-red-500 p-4 lg:w-20 lg:h-20 sm:w-16 sm:h-16 rounded-full flex items-center justify-center">
@@ -130,7 +137,8 @@ export const Features  = () => {
 <>
         {feature.map((item, index) => (
           <div key={index}>
-<div className='flex pb-5'>
+<div data-aos="fade-left"
+     data-aos-easing="ease-in-sine" className='flex pb-5'>
 <div class="p-1.5 lg:w-24 lg:h-24 sm:w-20 sm:h-20 border-2 border-black rounded-full hover:bg-red-200">
   <div class="bg-red-300 hover:bg-red-500 p-4 lg:w-20 lg:h-20 sm:w-16 sm:h-16 rounded-full flex items-center justify-center">
     <item.ico className='lg:w-20 lg:h-20 md:w-20 md:h-20 sm:w-10 sm:h-10 fill-green-800'/>
