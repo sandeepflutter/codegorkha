@@ -7,7 +7,7 @@ export const Footer = () => {
       <footer class="text-gray-400 bg-sky-900 body-font">
   <div class="container px-5 pt-10 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div class="flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-      <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+      <a href="#" class="flex title-font font-medium items-center md:justify-start justify-center text-white">
         <img src={logo} alt="" class="w-16 h-16 p-2 rounded-full border-white border-2"/> 
         <p class="ml-3 text-xl font-work">Code Gorkha</p>
       </a>
@@ -22,16 +22,16 @@ export const Footer = () => {
         <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3 font-lora">COMPANY</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-400 hover:text-white font-amaranth">About Us</a>
+            <a href="#" class="text-gray-400 hover:text-white font-amaranth">About Us</a>
           </li>
           <li>
-            <a class="text-gray-400 hover:text-white font-amaranth">Services</a>
+            <a href="#" class="text-gray-400 hover:text-white font-amaranth">Services</a>
           </li>
           <li>
-            <a class="text-gray-400 hover:text-white font-amaranth">Blog</a>
+            <a href="#" class="text-gray-400 hover:text-white font-amaranth">Blog</a>
           </li>
           <li>
-            <a class="text-gray-400 hover:text-white font-amaranth">Careers</a>
+            <a href="#" class="text-gray-400 hover:text-white font-amaranth">Careers</a>
           </li>
         </nav>
       </div>
@@ -50,10 +50,10 @@ export const Footer = () => {
         <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3 font-lora">HELP</h2>
         <nav class="list-none mb-10">
           <li>
-            <a class="text-gray-400 hover:text-white font-amaranth">FAQ's</a>
+            <a href="#" class="text-gray-400 hover:text-white font-amaranth">FAQ's</a>
           </li>
           <li>
-            <a class="text-gray-400 hover:text-white font-amaranth">Contact Us</a>
+            <a href="#" class="text-gray-400 hover:text-white font-amaranth">Contact Us</a>
           </li>
         </nav>
       </div>

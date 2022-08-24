@@ -37,10 +37,10 @@
                  className="mySwiper"
               >
                 <SwiperSlide>
-          <img src={d} />
+          <img src={d} alt=""/>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={d} />
+          <img src={d} alt="" />
         </SwiperSlide>
               </Swiper>
             </>
