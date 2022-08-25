@@ -11,7 +11,9 @@ Link.link-wrapper > a.active {
     background-color: blue;
 }
 
-.full {
-  height: 90vh;
+
+.full1 {
+  height: 70vh;
   width: 50vw;
+  
 }
