@@ -4,8 +4,11 @@ import Lottie from "lottie-react";
 import ab from '../Asset/pp.json';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import CountUp from 'react-countup';
+import VisibilitySensor from "react-visibility-sensor";
 
-export const About  = () => {      
+export const About  =  () => {     
+  const [focus, setFocus] = React.useState(false);
 useEffect(
   ()=>{
 AOS.init({duration:1500})
@@ -72,23 +75,56 @@ Through information technology, we hope to impact the lives of millions of peopl
   <div class="container px-5 py-10 mx-auto">
     <div class="flex flex-wrap -m-4 text-center">
       <div class="p-4 sm:w-1/4 w-1/2">
-        <h2 data-aos="fade-zoom-in"
-     data-aos-easing="ease-in-back" class="title-font font-bold sm:text-2xl text-lg text-white ">1+</h2>
+        <h2  class="title-font font-bold sm:text-2xl text-lg text-white ">
+        <CountUp start={focus ? 0 : null} end={1} duration={1} redraw={true}>
+            {({ countUpRef }) => (
+                <VisibilitySensor onChange={(isVisible) => {
+                    if (isVisible) { setFocus(true); }
+                }}>
+                    <span ref={countUpRef} />
+                </VisibilitySensor>
+            )}
+        </CountUp>+
+          </h2>
         <p class="leading-relaxed font-amaranth">Years in Business</p>
       </div>
       <div class="p-4 sm:w-1/4 w-1/2">
-        <h2 data-aos="fade-zoom-in"
-     data-aos-easing="ease-in-back" class="title-font font-bold sm:text-2xl text-lg text-white">1+</h2>
+        <h2 class="title-font font-bold sm:text-2xl text-lg text-white">
+        <CountUp start={focus ? 0 : null} end={1} duration={1} redraw={true}>
+            {({ countUpRef }) => (
+                <VisibilitySensor onChange={(isVisible) => {
+                    if (isVisible) { setFocus(true); }
+                }}>
+                    <span ref={countUpRef} />
+                </VisibilitySensor>
+            )}
+        </CountUp>+</h2>
         <p class="leading-relaxed font-amaranth">Ongoing Projects</p>
       </div>
       <div class="p-4 sm:w-1/4 w-1/2">
-        <h2 data-aos="fade-zoom-in"
-     data-aos-easing="ease-in-back" class="title-font font-bold sm:text-2xl text-lg text-white">1+</h2>
+        <h2 class="title-font font-bold sm:text-2xl text-lg text-white">
+        <CountUp start={focus ? 0 : null} end={1} duration={1} redraw={true}>
+            {({ countUpRef }) => (
+                <VisibilitySensor onChange={(isVisible) => {
+                    if (isVisible) { setFocus(true); }
+                }}>
+                    <span ref={countUpRef} />
+                </VisibilitySensor>
+            )}
+        </CountUp>+</h2>
         <p class="leading-relaxed font-amaranth">Clients</p>
       </div>
       <div class="p-4 sm:w-1/4 w-1/2">
-        <h2 data-aos="fade-zoom-in"
-     data-aos-easing="ease-in-back" class="title-font font-bold sm:text-2xl text-lg text-white">4+</h2>
+        <h2 class="title-font font-bold sm:text-2xl text-lg text-white">
+        <CountUp start={focus ? 0 : null} end={4} duration={1} redraw={true}>
+            {({ countUpRef }) => (
+                <VisibilitySensor onChange={(isVisible) => {
+                    if (isVisible) { setFocus(true); }
+                }}>
+                    <span ref={countUpRef} />
+                </VisibilitySensor>
+            )}
+        </CountUp>+</h2>
         <p class="leading-relaxed font-amaranth">Products</p>
       </div>
     </div>
