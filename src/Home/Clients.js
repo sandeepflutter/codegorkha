@@ -14,9 +14,9 @@ export const Clients = () => {
       
       <footer class=" bg-sky-900 body-font">
   <div class="">
-    <div class="flex flex-col items-center justify-center pb-16">
+    <div class="flex flex-col items-center justify-center">
   </div>
-<div className='p-10'>
+<div className='pt-2'>
   <p className='text-center text-[4vh] text-white pb-5 font-fredericka'>
     Our Happy Clients
   </p>

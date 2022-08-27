@@ -18,21 +18,15 @@ AOS.init({duration:1500})
 
     return (
       
-<div class=" bg-blue-900 body-font">
-<section id="About" class="pt-5 lg:pt-[40px] pb-5 lg:pb-[9px] pl-5 pr-5">
+<div id="about" class=" bg-blue-900 body-font">
+<section  class="pb-5 lg:pb-[9px] pl-5 pr-5">
    <div class="px-3 lg:px-20 sm:px-10 md:px-5 lg:flex md:flex">
-
-  
-
 
 <div data-aos="fade-right"
      data-aos-easing="ease-in-sine" className='lg:w-[200vh] md:w-[200vh]'>
       <div class="flex flex-wrap -mx-4">
-
          <div class="w-full px-4">
-
             <div class="text-center mx-auto mb-5 lg:mb-5">
-
                <h2 class=" text-white font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 font-hahmlet">
                   About
                </h2>
@@ -56,9 +50,6 @@ Our aim is to provide a high-quality, user-friendly product through a pleasant,
 Through information technology, we hope to impact the lives of millions of people. 
 </p>
 </div>
-
-
-
 </div>
 </div>
 

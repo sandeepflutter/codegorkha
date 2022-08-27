@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import {Link} from 'react-scroll';
 
-import {TiArrowSortedUp} from 'react-icons/ti';
+import {BsFillArrowUpCircleFill} from 'react-icons/bs';
 import Footer from "../Navbar/Footer";
 import Clients from "../Home/Clients";
 import Services from "../Home/Services";
@@ -12,8 +12,26 @@ import Screen from "../Link/Screen";
 
 
 export const Home = () => {
+  const [visible, setVisible] = useState(false)
+  
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300){
+      setVisible(true)
+    } 
+    else if (scrolled <= 300){
+      setVisible(false)
+    }
+  };
+
+  window.addEventListener('scroll', toggleVisible);
     return (
       <div className="bg-blue-50">
+         <Link href="#" to="home" spy={true} smooth={true} duration={500} offset={-100}>
+      <button  id="myBtn" style={{display: visible ? 'inline' : 'none'}}
+      class="fixed z-50 bottom-10 right-8 bg-transparent w-20 h-20 drop-shadow-lg flex justify-center items-center text-blue-500  fill-black text-6xl hover:drop-shadow-2xl hover:animate-bounce duration-900">
+        <BsFillArrowUpCircleFill className="h-10"/></button>
+        </Link>
       <Landing/>
       <About />
       <Features/>
@@ -23,11 +41,7 @@ export const Home = () => {
       <Services/>
       <Clients/>
      
-      <div className="bg-sky-900 justify-center flex items-center">
-      <Link href="#" to="home" spy={true} smooth={true} duration={500} >
-      <button id="myBtn" class="bg-transparent text-blue-500 text-6xl"><TiArrowSortedUp/></button>
-       </Link>
-       </div>
+     
       <Footer className="items-center"/>
       </div>
     );
