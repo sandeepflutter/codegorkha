@@ -8,12 +8,15 @@ import Contact from "./Link/Contact";
 import Home from "./Link/Home";
 import Career from "./Link/Career";
 import data from "./Link/data";
+import ScrollToTop from "./ScrollToTop";
+
 
 
 function App() {
   return (
   
 <Router>
+  <ScrollToTop>
   <div>
         <Nav/>
 <Routes>
@@ -21,13 +24,15 @@ function App() {
         <Route path="/Website" element={<Website/>}/>
         <Route path="/Mobile" element={<Mobile/>}/>
         <Route path="/Desktop" element={<Desktop/>}/>
-        <Route   path="/Contact" element={<Contact social={data.social}/>}/>
+        <Route path="/Contact" element={<Contact social={data.social}/>}/>
         <Route path="/Career" element={<Career/>}/>
         
 </Routes>
 </div>
+</ScrollToTop>
 </Router>
   );
 }
+
 
 export default App;

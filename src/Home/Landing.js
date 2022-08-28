@@ -36,7 +36,7 @@ export const Landing  = () => {
       </div>
      
      
-<div className='flex flex-1 lg:flex-none sm:flex-1 md:flex-none items-center justify-center'>
+<div className='lg:pb-0 md:pb-0 sm:pb-10 flex flex-1 lg:flex-none sm:flex-1 md:flex-none items-center justify-center'>
 <div className='flex items-center justify-cente lg:h-[75vh] md:h-[75vh] h-[50vh]'>
 <Rive src={ab} className="full1 "/>
 </div>

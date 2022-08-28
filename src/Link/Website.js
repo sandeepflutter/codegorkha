@@ -11,6 +11,7 @@ import a from '../Asset/a.jpg'
 import r from '../Asset/r.png'
 import t from '../Asset/t.png'
 import Footer from "../Navbar/Footer";
+import Web from './Tip/Web'
 
 
 
@@ -126,7 +127,7 @@ export const Website = () => {
   </div>
 </section>
 </div>
- 
+<Web/>
 <div className="w-full justify-center flex items-center">
 <div className="w-full max-w-6xl px-2 py-2 sm:px-0 ">
       <Tab.Group>
@@ -193,6 +194,7 @@ export const Website = () => {
     </div>
     </div>
       </div>
+      
       <Footer/>
       </div>
     );

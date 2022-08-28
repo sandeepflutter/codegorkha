@@ -1,5 +1,5 @@
 import logo from '../Asset/logo.png';
-
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
     return (
@@ -21,11 +21,12 @@ export const Footer = () => {
         <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3 font-lora">COMPANY</h2>
         <nav class="list-none mb-10">
           <li>
-            <a href="#" class="text-gray-400 hover:text-white font-amaranth">Careers</a>
+            <Link href="#" to="/Career" class="text-gray-400 hover:text-white font-amaranth" >Careers</Link>
           </li>
           <li>
-            <a href="#" class="text-gray-400 hover:text-white font-amaranth">Contact Us</a>
+            <Link href="#" to="/Contact" class="text-gray-400 hover:text-white font-amaranth" >Contact Us</Link>
           </li>
+         
         </nav>
       </div>
     </div>
