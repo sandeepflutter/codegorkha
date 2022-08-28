@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import '../../App.css';
 import Lottie from "lottie-react";
-import  web from '../../Asset/web.json';
+import  mobile from '../../Asset/mobile.json';
 import {CgWebsite} from 'react-icons/cg';
 import {FiUserCheck} from 'react-icons/fi';
 import {TbAsteriskSimple} from 'react-icons/tb';
@@ -11,7 +11,7 @@ import {MdScreenRotation} from 'react-icons/md';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
-export const Web  = () => {
+export const Mob  = () => {
 
   useEffect(
     ()=>{
@@ -83,7 +83,7 @@ export const Web  = () => {
                   Features
                </h2>
                <p class="text-base text-body-color font-titillium">
-               We develop best website using modern tools.
+               We develop best Mobile Application using modern tools.
                </p>
             </div>
          </div>
@@ -102,12 +102,11 @@ export const Web  = () => {
 ))}
 </div>
 
-<div className='flex items-center justify-center'>
-<div className='flex items-center justify-center h-[50vh] w-[120vh] pb-5'>
+<div className='flex items-center justify-center h-[60vh] pb-5'>
 <div>
-<Lottie animationData={web} loop={true} height={200} width={200} />
+<Lottie animationData={mobile} loop={true} height={200} width={200} />
     </div>
-</div></div>
+</div>
 
 <div className='justify-between lg:flex md:flex'>
 {feature.map((item, index) => (
@@ -130,4 +129,4 @@ export const Web  = () => {
   }
 
   
-  export default Web;
+  export default Mob;

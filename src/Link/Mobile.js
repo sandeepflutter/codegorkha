@@ -6,6 +6,7 @@ import bg from '../Asset/bg.jpg'
 import sam from '../Asset/sam.jpg'
 import wt from '../Asset/wt.jpg'
 import Footer from "../Navbar/Footer";
+import Mob from './Tip/Mob'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -90,7 +91,7 @@ export const Mobile = () => {
 </section>
 </div>
 
-
+<Mob/>
 
      
       

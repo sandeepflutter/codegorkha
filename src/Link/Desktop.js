@@ -4,6 +4,7 @@ import { Tab } from '@headlessui/react'
 import f from '../Asset/f.png'
 import w from '../Asset/wt.jpg'
 import Footer from "../Navbar/Footer";
+import Desk from './Tip/Desk';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -65,7 +66,7 @@ export const Desktop = () => {
   </div>
 </section>
 </div>
-  
+  <Desk/>
 
       
   
