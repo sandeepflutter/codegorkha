@@ -35,46 +35,9 @@ export const Desktop = () => {
 
 
 
-<div className="bg-blue-50">
-      
-      <div id="skill" className="  px-4  py-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8">
-     
-     
-     
-     
-     
-     
-<p className="text-center font-bold text-3xl font-crimson"> Desktop Application</p>
-
-
-
-     
-      
-<div>
-  <h1 class="font-hahmlet text-[3vh]">Tech We Work With</h1>
-  <h1 class="font-hahmlet text-[2vh]">FRAMEWORK</h1>
-  <section class="text-gray-700 body-font">
-  <div class="container px-5 py-2 mx-auto">
-    <div class="flex flex-wrap -m-4 text-center">
-      <div class="p-4 md:w-1/6 sm:w-1/3 w-1/2">
-        <div class="px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-        <img src={f} class=" w-12 h-12 mb-3 inline-block" alt=''/>
-          <p class="leading-relaxed font-titillium">Flutter</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-</div>
-  <Desk/>
-
-      
-  
-
- 
-
-
-<div className="w-full justify-center flex items-center">
+<div className="bg-white">
+      <Desk/>
+      <div className="w-full justify-center flex items-center">
 <div className="w-full max-w-6xl px-2 py-2 sm:px-0 ">
       <Tab.Group>
         <Tab.List className="flex space-x-1 rounded-xl bg-blue-300 p-1">
@@ -104,17 +67,10 @@ export const Desktop = () => {
                 'ring-white ring-opacity-60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2'
               )}
             >
-
-
-
-
-          
-
               
 <div class="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-1 "> 
                 {posts.map((post) => (
                  <div key={post.id}>
-
                  <div class="flex justify-center card m-2 cursor-pointer border hover:border-blue-500 rounded-lg hover:shadow-lg transform hover:-translate-y-3 transition-all duration-200">
                  <div class="rounded-lg shadow-lg bg-white max-w-sm">
                  <a href={post.url} target="_blank" rel="noreferrer" >
@@ -145,7 +101,6 @@ export const Desktop = () => {
       </Tab.Group>
     </div>
     </div>
-      </div>
       <Footer />
       </div>
     );

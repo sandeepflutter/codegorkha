@@ -1,17 +1,14 @@
 
 import { useState } from 'react'
 import { Tab } from '@headlessui/react'
-import {AiFillHtml5} from 'react-icons/ai'
-import {IoLogoCss3} from 'react-icons/io'
-import {DiJavascript} from 'react-icons/di'
-import {GrReactjs} from 'react-icons/gr'
-import {SiTailwindcss} from 'react-icons/si'
-import f from '../Asset/f.png'
+
+
 import a from '../Asset/a.jpg'
 import r from '../Asset/r.png'
 import t from '../Asset/t.png'
 import Footer from "../Navbar/Footer";
 import Web from './Tip/Web'
+
 
 
 
@@ -45,90 +42,10 @@ export const Website = () => {
 
 
     return (
+<div className="">
     
-
-
-
-<div className="bg-blue-50">
-      
-      <div id="skill" className="  px-4  py-2 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8">
-     
-     
-     
-     
-     
-     
-<p className="text-center font-bold text-3xl font-crimson">Website</p>
-
-
-
-     
-      
-
-  
-
-      
-  
-<div>
-  <h1 class="font-hahmlet text-[3vh] ">Tech We Work With</h1>
-  <h1 class="font-hahmlet text-[2vh]">FRONT END</h1>
-  <section class="text-gray-700 body-font">
-  <div class="container px-5 py-2 mx-auto">
-   
-    <div class="flex flex-wrap -m-4 text-center">
-
-      <div class="p-4 md:w-1/6 sm:w-1/3 w-1/2">
-      <div class="px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-          <AiFillHtml5 class="text-orange-500 w-12 h-12 mb-3 inline-block"/>
-          <p class="leading-relaxed font-titillium">HTML</p>
-        </div>
-      </div>
-
-      <div class="p-4 md:w-1/6 sm:w-1/3 w-1/2">
-        <div class="px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-        <IoLogoCss3 class="text-blue-500 w-12 h-12 mb-3 inline-block"/>
-          <p class="leading-relaxed font-titillium" >CSS</p>
-        </div>
-      </div>
-
-
-
-      <div class="p-4 md:w-1/6 sm:w-1/3 w-1/2">
-        <div class="px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-         <DiJavascript class="text-yellow-500 w-12 h-12 mb-3 inline-block"/>
-          <p class="leading-relaxed font-titillium">JavaScript</p>
-        </div>
-      </div>
-
-
-<div class="p-4 w-1/2 md:w-1/6 sm:w-1/3">
-        <div class="x-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-         <GrReactjs class="text-cyan-500 w-12 h-12 mb-3 inline-block"/>
-          <p class="leading-relaxed font-titillium">React JS</p>
-        </div>
-      </div>
-
-      <div class="p-4 w-1/2 md:w-1/6 sm:w-1/3">
-        <div class="px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-        <SiTailwindcss class="text-sky-500 w-12 h-12 mb-3 inline-block"/>
-          <p class="leading-relaxed font-titillium">Tailwind CSS</p>
-        </div>
-      </div>
-
-
-
-      <div class="p-4 md:w-1/6 sm:w-1/3 w-1/2">
-        <div class="px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
-        <img src={f} alt="img1" class=" w-12 h-12 mb-3 inline-block"/>
-          <p class="leading-relaxed font-titillium">Flutter</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-</div>
-<Web/>
-<div className="w-full justify-center flex items-center">
+      <Web/>
+      <div className="w-full justify-center flex items-center">
 <div className="w-full max-w-6xl px-2 py-2 sm:px-0 ">
       <Tab.Group>
         <Tab.List className="flex space-x-1 rounded-xl bg-blue-300 p-1">
@@ -193,8 +110,6 @@ export const Website = () => {
       </Tab.Group>
     </div>
     </div>
-      </div>
-      
       <Footer/>
       </div>
     );

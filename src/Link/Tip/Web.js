@@ -2,14 +2,14 @@ import React, {useEffect} from 'react';
 import '../../App.css';
 import Lottie from "lottie-react";
 import  web from '../../Asset/web.json';
-import {CgWebsite} from 'react-icons/cg';
-import {FiUserCheck} from 'react-icons/fi';
-import {TbAsteriskSimple} from 'react-icons/tb';
-import {BsSpeedometer} from 'react-icons/bs';
-import {MdOutlineSecurity} from 'react-icons/md';
-import {MdScreenRotation} from 'react-icons/md';
 import AOS from 'aos';
 import 'aos/dist/aos.css'
+import f from '../../Asset/f.png'
+import {AiFillHtml5} from 'react-icons/ai'
+import {IoLogoCss3} from 'react-icons/io'
+import {DiJavascript} from 'react-icons/di'
+import {GrReactjs} from 'react-icons/gr'
+import {SiTailwindcss} from 'react-icons/si'
 
 export const Web  = () => {
 
@@ -19,68 +19,18 @@ export const Web  = () => {
     },[]
   );
 
-   document.querySelectorAll( '.ciclegraph' ).forEach( ( ciclegraph )=>{
-      let circles = ciclegraph.querySelectorAll( '.circle' )
-      let angle = 360-90, dangle = 360 / circles.length
-      for( let i = 0; i < circles.length; ++i ){
-        let circle = circles[i]
-        angle += dangle
-        circle.style.transform = `rotate(${angle}deg) translate(${ciclegraph.clientWidth / 2}px) rotate(-${angle}deg)`
-      }
-    })
-
-      const feature1 = [
-        {
-            ico: CgWebsite,
-            txt: "Best UI and Functionality",
-          },
-
-          {
-            ico: FiUserCheck,
-            txt: "Easy-to-use",
-          },
-
-          {
-            ico: MdScreenRotation,
-            txt: "High Responsiveness",
-          },
-
-       
-      ];
 
 
-
-
-      const feature = [
-        {
-            ico: MdOutlineSecurity,
-            txt: "Security",
-          },
-
-          {
-            ico: TbAsteriskSimple,
-            txt: "Simplicity",
-          },
-
-          {
-            ico: BsSpeedometer,
-            txt: "Speed",
-          },
-
-          
-      ];
-   
 
       
     return (
-<div class=" bg-white body-font">
+<div class=" bg-white body-font pb-5">
 <section id="service" class="pt-5 lg:pt-[20px] pb-5 lg:pb-[9px] pl-5 pr-5">
-   <div class="px-3 lg:px-20 sm:px-10 md:px-5">
-      <div class="flex flex-wrap -mx-4">
+<div class="flex flex-wrap -mx-4">
          <div class="w-full px-4">
             <div class="text-center mx-auto mb-5 lg:mb-5">
                <h2 class=" font-bold text-3xl sm:text-4xl md:text-[40px] text-dark mb-4 font-hahmlet">
-                  Features
+               Website
                </h2>
                <p class="text-base text-body-color font-titillium">
                We develop best website using modern tools.
@@ -88,41 +38,68 @@ export const Web  = () => {
             </div>
          </div>
       </div>
- <div className='lg:flex md:flex justify-between'>     
-{feature1.map((item, index) => (
-          <div key={index}>
-<div data-aos="fade-zoom-in"
-     data-aos-offset="0" className='flex  pb-5'>
-<div class="p-1.5 w-12 h-12 border-2 border-black rounded-full hover:bg-red-200">
-    <item.ico className='w-8 h-8'/>
-</div>
-<p className='align-middle px-5 flex items-center justify-center font-oleo text-[2.5vh]'>{item.txt}</p>
-</div>
-</div>
-))}
+ 
+   <div class="lg:flex px-3 lg:px-20 sm:px-10 md:px-5">
+     <div>
+     <h1 class="font-hahmlet text-[3vh] text-center">Tech We Work With</h1>
+  <h1 class="font-hahmlet text-[2vh] text-center">FRONT END</h1>
+ <div className='lg:flex text-center relative items-center justify-center md:flex'>
+       
+ <div class=" flex flex-wrap -m-4 ">
+
+<div class="p-4 w-1/3">
+<div class=" py-6 rounded-lg transform transition duration-500 hover:scale-110">
+    <AiFillHtml5 class="text-orange-500 w-10 h-10 mb-1 inline-block"/>
+    <p class="leading-relaxed font-titillium">HTML</p>
+  </div>
 </div>
 
-<div className='flex items-center justify-center'>
-<div className='flex items-center justify-center h-[50vh] w-[120vh] pb-5'>
-<div>
+<div class="p-4 w-1/3">
+  <div class="px-4 py-6 rounded-lg transform transition duration-500 hover:scale-110">
+  <IoLogoCss3 class="text-blue-500 w-10 h-10 mb-1 inline-block"/>
+    <p class="leading-relaxed font-titillium" >CSS</p>
+  </div>
+</div>
+
+
+
+<div class="p-4 w-1/3">
+  <div class="py-6 rounded-lg transform transition duration-500 hover:scale-110">
+   <DiJavascript class="text-yellow-500 w-10 h-10 mb-1 inline-block"/>
+    <p class="leading-relaxed font-titillium">JavaScript</p>
+  </div>
+</div>
+
+
+<div class="p-4 w-1/3">
+  <div class="py-6 rounded-lg transform transition duration-500 hover:scale-110">
+   <GrReactjs class="text-cyan-500 w-10 h-10 mb-1 inline-block"/>
+    <p class="leading-relaxed font-titillium">React JS</p>
+  </div>
+</div>
+
+<div class="p-4 w-1/3 ">
+  <div class="py-6 rounded-lg transform transition duration-500 hover:scale-110">
+  <SiTailwindcss class="text-sky-500 w-10 h-10 mb-1 inline-block"/>
+    <p class="leading-relaxed font-titillium">Tailwind CSS</p>
+  </div>
+</div>
+
+
+
+<div class="p-4 w-1/3">
+  <div class="py-6 rounded-lg transform transition duration-500 hover:scale-110">
+  <img src={f} alt="img1" class=" w-10 h-10 mb-1 inline-block"/>
+    <p class="leading-relaxed font-titillium">Flutter</p>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div className='flex items-center justify-center '>
+<div className='flex items-center justify-center h-[50vh]  pb-5'>
 <Lottie animationData={web} loop={true} height={200} width={200} />
-    </div>
 </div></div>
-
-<div className='justify-between lg:flex md:flex'>
-{feature.map((item, index) => (
-          <div key={index}>
-<div data-aos="fade-zoom-in"
-     data-aos-offset="0" className='flex pb-5 '>
-<div class="p-1.5 w-12 h-12 border-2 border-black rounded-full hover:bg-red-200">
-    <item.ico className='w-8 h-8'/>
-</div>
-<p className='align-middle px-5 flex items-center justify-center font-oleo text-[2.5vh]'>{item.txt}</p>
-</div>
-          </div>
-        ))}
-   
-    </div>
 </div>
 </section>
 </div>
