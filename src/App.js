@@ -15,12 +15,12 @@ import ScrollToTop from "./ScrollToTop";
 function App() {
   return (
   
-<Router>
+
   <ScrollToTop>
   <div>
         <Nav/>
 <Routes>
-<Route path="/" exact element={<Home/>} />
+<Route path="/" element={<Home/>} />
         <Route path="/Website" element={<Website/>}/>
         <Route path="/Mobile" element={<Mobile/>}/>
         <Route path="/Desktop" element={<Desktop/>}/>
@@ -30,7 +30,7 @@ function App() {
 </Routes>
 </div>
 </ScrollToTop>
-</Router>
+
   );
 }
 

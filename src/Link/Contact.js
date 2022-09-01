@@ -55,7 +55,7 @@ export const Contact = ({social: {youtube, github, medium, facebook, twitter, em
    
       <div class="bg-white relative flex flex-wrap py-2 rounded shadow-md opacity-90">
         <div class="lg:w-1/2 px-10">
-          <h2 class=" font-bold text-red-500 tracking-widest text-xs font-hahmlet">ADDRESS</h2>
+          <h2 class=" font-bold text-red-500 tracking-widest text-xs font-hahmlet ">ADDRESS</h2>
           <p class="mt-1 text-blue-500 font-lora">Kathmandu, Bagmati Province, Nepal</p>
         </div>
         <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
