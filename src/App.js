@@ -1,6 +1,6 @@
 import React from "react";
 import Nav from "./Navbar/Nav";
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import Website from "./Link/Website";
 import Mobile from "./Link/Mobile";
 import Desktop from "./Link/Desktop";
@@ -14,8 +14,6 @@ import ScrollToTop from "./ScrollToTop";
 
 function App() {
   return (
-  
-
   <ScrollToTop>
   <div>
         <Nav/>
@@ -26,11 +24,9 @@ function App() {
         <Route path="/Desktop" element={<Desktop/>}/>
         <Route path="/Contact" element={<Contact social={data.social}/>}/>
         <Route path="/Career" element={<Career/>}/>
-        
 </Routes>
 </div>
 </ScrollToTop>
-
   );
 }
 
