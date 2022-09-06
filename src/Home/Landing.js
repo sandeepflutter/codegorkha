@@ -22,7 +22,7 @@ export const Landing  = () => {
       <p class="mb-5 leading-relaxed text-blue-300 text-justify font-rancho text-2xl">We create Simple Websites, Mobile Apps & Desktop Applications. So, come along with us as we assist you to grow.</p>
       <div class="justify-center lg:pt-10">
       
-      <a class="pb-5 flex title-font font-medium items-center md:justify-start justify-center text-white">
+      <a href='https://play.google.com/store/apps/developer?id=CodeGurkha&hl=en&gl=US' target="_blank" rel="noreferrer" class="pb-5 flex title-font font-medium items-center md:justify-start justify-center text-white">
       <img src={gp} alt='' class=" w-40 h-12"/>
       </a>
       

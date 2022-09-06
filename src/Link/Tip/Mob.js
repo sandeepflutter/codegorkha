@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../App.css';
 import Lottie from "lottie-react";
-import  mobile from '../../Asset/mobile.json';
+import  mobile from '../../Asset/mob.json';
 import f from '../../Asset/f.png'
 
 

@@ -2,7 +2,7 @@
 import React, {useState} from "react";
 import {Link, NavLink } from 'react-router-dom';
 import { Transition } from "@headlessui/react";
-import logo from '../Asset/logo.png';
+import logo from '../Asset/logor.png';
 import '../App.css';
 
 

@@ -1,4 +1,4 @@
-import logo from '../Asset/logo.png';
+import logo from '../Asset/logor.png';
 import { Link } from "react-router-dom";
 
 export const Footer = () => {
@@ -7,10 +7,10 @@ export const Footer = () => {
       <footer class="text-gray-400 bg-sky-900 body-font">
   <div class="container px-5 pt-10 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
     <div class="flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-      <a href="#" class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+      <div class="flex title-font font-medium items-center md:justify-start justify-center text-white">
         <img src={logo} alt="" class="w-16 h-16 p-2 rounded-full border-white border-2"/> 
         <p class="ml-3 text-xl font-work">Code Gorkha</p>
-      </a>
+      </div>
       
       <p class="mt-2 mb-2 text-sm text-white font-amaranth">A full technology company that creates the future.</p>
       
